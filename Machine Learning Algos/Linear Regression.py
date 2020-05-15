@@ -9,4 +9,4 @@ Y_train = daibetic.target[:30]
 Y_test = daibetic.target[:-20]
 model = linear_model.LinearRegression()
 model.fit(X_train, Y_train)
-model.predict(X_test)
+Y_predict = model.predict(X_test)
